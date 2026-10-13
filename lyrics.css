@@ -1,0 +1,135 @@
+
+/* General Page Design */
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffdde8, #f7a8c4, #d8b4fe);
+    color: #4a1935;
+    text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main Music Card */
+.music-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(100, 30, 70, 0.2);
+    box-sizing: border-box;
+}
+
+/* Song Title */
+h1 {
+    color: #d63384;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+/* Artist Name */
+h4 {
+    color: #7a3158;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+/* Album Cover */
+.album-cover {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Album Cover Hover */
+.album-cover:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(214, 51, 132, 0.4);
+}
+
+/* Description */
+.description {
+    color: #81536b;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* Horizontal Line */
+hr {
+    border: none;
+    height: 2px;
+    background: #f2b6d0;
+    margin: 20px 0;
+}
+
+/* Button */
+button {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #a61e63;
+    transform: translateY(-2px);
+}
+
+/* Lyrics Section */
+.lyrics {
+    margin-top: 25px;
+    overflow-x: auto;
+}
+
+.lyrics pre {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    color: #54233e;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    color: #a34d78;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .music-card {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .lyrics pre {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .album-cover {
+        max-width: 100%;
+    }
+}
